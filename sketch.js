@@ -1,5 +1,6 @@
 let mipelota;
-
+let frutas = ["manzama", "pera", "piña", "granadilla"];
+console.log(frutas[2]);
 function setup() {
   createCanvas(windowWidth, windowHeight);
   mipelota = new Pelota();
