@@ -1,14 +1,15 @@
 class Pelota {
   constructor() {
-    this.posX = random(50, windowWidth - 50);
-    this.posY = random(50, 70);
+    this.posX = random(200, windowWidth - 60);
+    this.posY = random(90, 190);
     this.velX = random(-1, 1);
     this.velY = 0;
     this.acelY = 0.98;
 
     this.diam = int(random(5, 50));
     this.rad = this.diam / 2;
-    this.colorin = color(20, random(100, 255), random(0, 150));
+    noStroke();
+    this.colorin = color(200, random(100, 255), random(0, 150));
 
     print("Hola estoy vive");
   }
