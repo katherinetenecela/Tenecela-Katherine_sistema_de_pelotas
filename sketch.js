@@ -1,14 +1,19 @@
-let mipelota;
-let frutas = ["manzama", "pera", "piña", "granadilla"];
-console.log(frutas[2]);
+pelotas = [];
+const NP = 200;
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  mipelota = new Pelota();
+  for (let i = 0; i < NP; i++) {
+    let pelota = new Pelota();
+    pelotas.push(pelota);
+  }
+  print(pelotas);
 }
 
 function draw() {
-  background(255);
-  circle(mouseX, mouseY, 20);
-  mipelota.update(300);
-  mipelota.display();
+  background(163, 99, 252);
+  for (let i = 0; i < NP; i++) {
+    pelotas[i].update(windowHeight);
+    pelotas[i].display();
+  }
 }
